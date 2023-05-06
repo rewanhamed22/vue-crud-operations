@@ -32,6 +32,15 @@
           id="exampleInputEmail1"
         />
       </div>
+      <div>
+        <label for="image" class="form-label">Image Url</label>
+        <input
+          v-model="formData.image"
+          type="url"
+          class="form-control"
+          id="image"
+        />
+      </div>
       <br />
       <button class="btn btn-success ms-3">Add</button>
 
@@ -50,6 +59,7 @@ export default {
         first_name: "",
         last_name: "",
         email: "",
+        image: "",
       },
     };
   },
@@ -68,6 +78,7 @@ export default {
       this.formData.first_name = "";
       this.formData.last_name = "";
       this.formData.email = "";
+      this.formData.image = "";
     },
     back() {
       this.$router.push("/");

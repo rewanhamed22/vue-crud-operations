@@ -2,7 +2,7 @@
 
 
         <div class="card">
-          <!-- <img :src="getImageUrl(image)" class="card-img-top" alt="..." /> -->
+          <img :src="image" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">{{ id }}</h5>
             <h5 class="card-title">{{ first_name }} {{ last_name }}</h5>

@@ -29,6 +29,15 @@
           id="exampleInputEmail1"
         />
       </div>
+      <div>
+        <label for="image" class="form-label">Image Url</label>
+        <input
+          v-model="formData.image"
+          type="url"
+          class="form-control"
+          id="image"
+        />
+      </div>
       <br />
       <button class="btn btn-success ms-3">Edit</button>
 
@@ -47,6 +56,7 @@ export default {
         first_name: "",
         last_name: "",
         email: "",
+        image:""
       },
       id: 0,
       user: {},

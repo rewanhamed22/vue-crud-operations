@@ -5,6 +5,8 @@
       <thead>
         <tr>
           <th scope="col">Id</th>
+          <th scope="col">Image</th>
+
           <th scope="col">First</th>
           <!-- <th scope="col">Last</th>
           <th scope="col">Gender</th> -->
@@ -14,6 +16,8 @@
       <tbody>
         <tr v-for="user in users" :key="user.id">
           <th scope="row">{{ user.id }}</th>
+          <td><img :src="user.image" class="avatar" /></td>
+
           <td>{{ user.first_name }}</td>
           <!-- <td>{{ user.last_name }}</td>
           <td>{{ user.gender }}</td> -->
@@ -89,6 +93,12 @@ export default {
 <style scoped>
 div {
   margin-top: 10px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 table {
   width: 70%;
